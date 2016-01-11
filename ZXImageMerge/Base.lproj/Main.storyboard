@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JeP-s3-rtI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Onj-Xe-AU5">
+                                <rect key="frame" x="0.0" y="211" width="414" height="313"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Onj-Xe-AU5" secondAttribute="height" multiplier="414:313" id="hET-rA-pvj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="additional" translatesAutoresizingMaskIntoConstraints="NO" id="m5i-CF-z1v">
+                                <rect key="frame" x="175" y="532" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="OM4-B7-oYM"/>
+                                    <constraint firstAttribute="height" constant="64" id="XCa-9k-edG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAJ-Iq-5kM">
+                                <rect key="frame" x="168" y="627" width="79" height="30"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.68627450980000004" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="Qzq-aK-87j"/>
+                                    <constraint firstAttribute="height" constant="30" id="iLE-9D-tso"/>
+                                </constraints>
+                                <state key="normal" title="Merge">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="MergeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgM-82-ag5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Onj-Xe-AU5" secondAttribute="trailing" id="6kt-9p-sde"/>
+                            <constraint firstItem="gAJ-Iq-5kM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Gd-jF-pI7"/>
+                            <constraint firstItem="m5i-CF-z1v" firstAttribute="top" secondItem="Onj-Xe-AU5" secondAttribute="bottom" constant="8" id="AT1-rS-4N8"/>
+                            <constraint firstItem="m5i-CF-z1v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CV8-7s-GHc"/>
+                            <constraint firstItem="gAJ-Iq-5kM" firstAttribute="top" secondItem="m5i-CF-z1v" secondAttribute="bottom" constant="31" id="Fmz-72-Ll5"/>
+                            <constraint firstItem="Onj-Xe-AU5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vyg-5H-yji"/>
+                            <constraint firstItem="Onj-Xe-AU5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WBx-cA-vSe"/>
+                            <constraint firstItem="Onj-Xe-AU5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kP2-Cm-VTt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="62g-E4-Qn3"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="additionalImageView" destination="m5i-CF-z1v" id="ba8-QN-4G4"/>
+                        <outlet property="backgroundImageView" destination="Onj-Xe-AU5" id="j82-7m-4qq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yvq-bl-0Lw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JeP-s3-rtI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p3Q-nN-aaM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7tT-xY-dRk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAa-eh-o3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="additional" width="128" height="128"/>
+        <image name="background" width="414" height="313"/>
+    </resources>
+</document>
